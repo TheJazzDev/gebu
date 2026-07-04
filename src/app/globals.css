@@ -13,7 +13,8 @@
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
+  /* --primary: oklch(0.208 0.042 265.755); */
+  --primary: oklch(72.3% 0.219 149.579);
   --primary-foreground: oklch(0.984 0.003 247.858);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
@@ -96,7 +97,8 @@
   --card-foreground: oklch(0.984 0.003 247.858);
   --popover: oklch(0.208 0.042 265.755);
   --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
+  --primary: oklch(72.3% 0.219 149.579);
+  /* --primary: oklch(0.929 0.013 255.508); */
   --primary-foreground: oklch(0.208 0.042 265.755);
   --secondary: oklch(0.279 0.041 260.031);
   --secondary-foreground: oklch(0.984 0.003 247.858);
@@ -136,6 +138,13 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Poppins, Helvetica, sans-serif;
+}
+
+.select-no-bg {
+  @apply !h-fit text-[10px] p-0 border-0 shadow-none rounded-none bg-transparent;
+}
+.nav-no-bg {
+  @apply !h-fit text-[12px] px-2 py-0 border-0 shadow-none rounded-none bg-transparent cursor-pointer;
 }
 
 /* Specifically for shadcn/ui & Radix components */
